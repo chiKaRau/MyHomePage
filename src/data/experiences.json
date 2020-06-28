@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "logo": "https://pbs.twimg.com/profile_images/1123386148288491520/48zba-Q2_400x400.jpg",
+    "company": "BlindlyDate",
+    "job_title": "Full Stack Developer",
+    "responsibilities": [
+      "Built Profile back-end server using Node.js, Express.js, MongoDB and Mongoose",
+      "Built Image back-end server using AWS S3",
+      "Built the application front-end UI using React-Native, React-Native Navigation",
+      "Cooperated with Chat teammate to build a functional conversation room using Socket.io",
+      "Cooperated with Auth teammate to build a functional Login System"
+    ],
+    "skills": [
+      "React-Native",
+      "Javascript",
+      "Node.js",
+      "Express.js",
+      "Mongoose",
+      "Socket.io",
+      "AWS"
+    ],
+    "date": { "start": "2019-06", "end": "2020-03" }
+  },
+  {
+    "id": 2,
+    "logo": "https://pbs.twimg.com/profile_images/1124403763630858240/Yz2BfK1K_400x400.jpg",
+    "company": "San Francsico State Univeristy Asian American & Pacific Islander",
+    "job_title": "Web Developer",
+    "responsibilities": [
+      "Updating new event and team member information for the existing website",
+      "Building a new service website to replace the old one on Drupal using JavaScript, Html, CSS, JQuery."
+    ],
+    "skills": ["HTML5", "CSS", "Bootstrap"],
+    "date": { "start": "2018-01", "end": "2018-09" }
+  }
+]

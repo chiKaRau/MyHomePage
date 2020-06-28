@@ -1,0 +1,459 @@
+/**********************/
+/*        PARTS       */
+/**********************/
+
+#App {
+  position: relative;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#UpperParts {
+  position: relative;
+  z-index: 5;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c4471c049_thumb900.jpg");
+  background-size: cover;
+  opacity: 0.9;
+}
+
+/**********************/
+/*     Components     */
+/**********************/
+/**Navbar.js*/
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/**Sidebar.js*/
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  border-radius: 0px;
+  padding-top: 20px;
+  transition: 0.1s;
+
+  #skillIcon {
+    transform: rotate(-90deg);
+  }
+
+  a {
+    padding: 25px 10px 25px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    background-color: #111;
+    color: white;
+    display: block;
+    transition: 0.2s;
+  }
+
+  .active {
+    background-color: white;
+    border-color: #111;
+    color: #111;
+  }
+
+  a:hover {
+    background-color: white;
+    color: #111;
+  }
+}
+
+/**Content.js*/
+#App {
+  margin-left: 0px; /* Same as the width of the sidenav */
+  transition: 0.15s;
+}
+
+/**Introduction.js*/
+#introduction{
+  color: white;
+  transition: 2.5s;
+  opacity: 0;
+  font-family: 'Archivo Black', sans-serif;
+
+  .placeholder1 {
+    height: 150px;
+    width: 100%;
+  }
+
+  #myName {
+    font-weight: bold;
+    font-size: 10vw;
+  }
+  
+  #myIntro {
+    font-weight: bold;
+    width: 375px;
+  }
+}
+
+#contact {
+  opacity: 0;
+  transition: 2.5s;
+  
+  a {
+    color: white;
+    opacity: 0.5;
+  }
+
+  a:hover {
+    opacity: 1;
+    transition: 0.25s;
+  }
+
+  .placeholder2 {
+    height: 150px;
+    width: 100%;
+  }
+}
+
+
+/**Experiences.js*/
+#experiences {
+  background-color: #f5f5f5;
+
+  .placeholder3 {
+    height: 50px;
+    width: 100%;
+  }
+  
+  .exp-box {
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+
+    img {
+      width: 250px;
+      height: 250px;
+      padding: 25px;
+      transition: .5s ease;
+    }
+
+    div {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+      margin-left: -50px;
+      margin-top: -50px;
+      transition: .5s ease;
+    }
+
+    i {
+      &:hover {
+        animation: flash 1s infinite;
+      }
+    }
+
+    .modal-title {
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+  }
+}
+
+/**Project.js */
+#projects {
+  background-color: #f5f5f5;
+  #p1 {
+    position: relative;
+    z-index: 2;
+    height: 250px;
+  }
+  #p2 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -250px; //-300
+    margin-left: 125px;
+    height: 75px;
+    transition: 3s ease;
+  }
+  #p3 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -200px; 
+    margin-left: -50px; //-100
+    height: 200px;
+    transition: 3s ease;
+  }
+  #p4 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -150px; 
+    margin-left: 250px; //325
+    height: 100px;
+    transition: 3s ease;
+  }
+  #ptextContainer {
+    position: absolute;
+    z-index: 3;
+    margin-top: 125px; //-250
+    margin-left: -125px;
+
+    #ptext {
+      position: absolute;
+      text-align: center;
+      padding-top: 10px;
+      width: 250px;
+      color: white;
+      z-index: 4;
+      font-weight: bold;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    #ptextBackground {
+      position: absolute;
+      background-color: white;
+      opacity: 0.3;
+      height: 50px;
+      width: 250px;
+    }
+  }
+}
+
+
+/**Skills.js*/
+#skills {
+  
+  background: #f5f5f5;
+  .skillTitles {
+    width: 0%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  .skillBox {
+    font-family: 'Noto Serif KR', serif;
+  }
+
+  #list-item-5 {
+    &:hover {
+      .skillTitles {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/**Footer.js*/
+#footer {
+  color: white;
+  background-color: #111;
+}
+
+/**SplashScreen.js*/
+#splash {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/**HR.js*/
+.hr-text {
+  font-size: 20px;
+  position: relative;
+  border: 0;
+  height: 1.5em;
+  margin-top:0;
+  text-align: center;
+  background-color: #f5f5f5;
+  font-family: 'Dancing Script', cursive;
+
+  &:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #b2b2b2, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: black;
+    background-color: #f5f5f5;
+  }
+}
+
+/**********************/
+/*      Animation     */
+/**********************/ 
+
+/**float*/
+.floatingObj {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes flash {
+  0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+.log {
+  width: 100%;
+  height: 22px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/**********************/
+/*        Size        */
+/**********************/ 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /**Navbar.js*/
+    .navbar {
+      position: relative;
+      width: 100%;
+      z-index: 999;
+      padding: 15;
+      background-color: #111 !important;
+      transition: .5s ease;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255,255,255,.5);
+    }
+    /**Introduction.js*/
+    #introduction{
+      color: white;
+    
+      .placeholder1 {
+        height: 50px;
+      }
+
+      #myIntro {
+        width: 300px;
+      }
+    }
+
+    #contact {
+      color: white;
+    
+      .placeholder2 {
+        height: 50px;
+      }
+    }
+    /**contact.js*/
+    #contact {
+      a {
+        opacity: 1;
+      }
+    }
+
+    /**Experiences.js*/
+    #experiences {
+      .exp-box {
+        div {
+          opacity: 1;
+        }
+        &:hover img {
+          opacity: 1;
+        }
+      }
+    }
+
+    /**Project.js */
+    #projects {
+      #p1 {
+        height: 150px;
+      }
+      #p2 {
+        margin-top: -200px;
+        margin-left: 75px;
+        height: 50px;
+      }
+      #p3 {
+        margin-top: -125px; 
+        margin-left: -75px; 
+        height: 100px;
+      }
+      #p4 {
+        margin-top: -100px; 
+        margin-left: 200px;
+        height: 50px;
+      }
+    
+      #ptextContainer {
+        margin-top: 75px; //-250
+        margin-left: -75px;
+        #ptext {
+          width: 150px;
+          color: white;
+          font-size: 15px;
+        }
+        #ptextBackground {
+          height: 85px;
+          width: 150px;
+        }
+      }
+    }
+
+    /**Skills.js */
+    #list-item-5 {
+      .skillTitles {
+        width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+      }
+    
+      &:hover {
+        .skillTitles {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+
+}
+
+/* Big Width Monitor (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 1080px) {
+  #UpperParts {
+    background-position: right bottom;
+  }
+}
