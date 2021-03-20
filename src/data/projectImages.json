@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "image": "https://uploads.codesandbox.io/uploads/user/ea14886a-d3cb-4078-a05b-a39d098edff8/E8qF-p1.png",
+    "alt": "laptop"
+  },
+  {
+    "id": "2",
+    "image": "https://uploads.codesandbox.io/uploads/user/ea14886a-d3cb-4078-a05b-a39d098edff8/Kjg7-p2.png",
+    "alt": "cloud"
+  },
+  {
+    "id": "3",
+    "image": "https://uploads.codesandbox.io/uploads/user/ea14886a-d3cb-4078-a05b-a39d098edff8/YL1v-p3.png",
+    "alt": "mobile"
+  },
+  {
+    "id": "4",
+    "image": "https://uploads.codesandbox.io/uploads/user/ea14886a-d3cb-4078-a05b-a39d098edff8/HA9_-p4.png",
+    "alt": "data"
+  }
+]
